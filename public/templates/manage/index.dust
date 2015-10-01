@@ -1,0 +1,6 @@
+{>"layouts/manage" /}
+
+{<body}
+    <h3>Manager</h3>
+    <p>This is the managing function page.</p>
+{/body}

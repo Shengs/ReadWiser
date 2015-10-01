@@ -1,0 +1,20 @@
+{>"layouts/master" /}
+
+{<body}
+	<div class="row" data-equalizer>
+	{#books}
+	<div class="large-3 columns book" data-equalizer-watch>
+		<ul class="pricing-table">
+		<img src="/img/{.cover}">
+  		<li class="title">{.title}</li>
+  		<li class="author">{.author}</li>
+  		<li class="price"><span>${.price}</span></li>
+  		<li class="description">{.truncText} ...</li>
+  		<li class="publisher">Publisher: {.publisher}</li>
+  		<li class="bullet-item">Category: {.category}</li>
+  		<li class="cta-button"><a class="button" href="/books/details/{._id}">Details</a></li>
+		</ul>
+	</div>
+	{/books}
+	</div>
+{/body}

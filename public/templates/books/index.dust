@@ -1,0 +1,9 @@
+{>"layouts/master" /}
+
+{<title}
+	Books page
+{/title}
+
+{<body}
+	There is no book,
+{/body}

@@ -1,0 +1,42 @@
+{>"layouts/master" /}
+
+{<title}
+	About Read Wiser
+{/title}
+
+{<body}
+	<div class="row">
+		<div class="large-12 column about">
+			<h2>Read Wiser really matters...</h2>
+			<br>
+			<p>An normal human being usually has limited lifetime. So we all should think about how to comsume these limited, time.
+			</p>
+			<p>Lets think about life through a special scope, imagine that we are all some super rubber transparent ballons varies in quality, and are able to become super big. A steady machine that costs time will keep pumping us to get bigger and bigger. There are countless types of gases that all have their own color. All ballons live under the same sky. And, YOU, have the right to pick gas for pumping youself. 
+			</P>
+			<h4>
+				Think about life in this way. It will be easier for you to make a decision. 
+			</h4>
+			<p>As the master of your mind, you have the power to make a change, to decide your outlook, density, stability, altitude, and the environment. 
+			</P>
+			<h4>Why 'Read Wiser really matters...'
+			</h4>
+			<p>If you keep thinking in this way, you will find out, those gases, are all types of information we received. From the process of using sound, sight, touch, smell and taste to interact with our world, we have chose the gas to absorb. <b>Reading</b>, is the one of the most efficient way to obtain high quality gas in all methods. Reading the right, attractive book would take you into the mood that reduce all other four senses to produce high quality gas for you selected goal. 
+			</p>
+			<p>
+			There are pure ballons with less colors, colorful ballons with mixed colors. The former could be more stable. The latter could get bigger faster. Vice versa. Use this model, get the gas you wanted, and we could creat our ballon society. 
+			</P>
+			<h5>
+			Some special types...
+			</h5>
+			<P>
+			<ol>
+			<li> Ballon with holes, they are dangerous, and extremly unstable.</li>
+			<li> Ballons sticked together, they usually dominant the sky.</li>
+			<li> Ballon filled with specific heavy gas, like extremly heart break things, these gas could decrease the transparency of the ballon.</li>
+			<li> Exploded ballon, if they don't go get some gas to start over, they will fall on the top of other ballons, sweep them off ASAP... </li>
+			<li> Ballons with holes at bottom, fly like rocket, to the sky...</li>
+			</ol>
+			</p>
+		</div>
+	</div>
+{/body}

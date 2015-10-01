@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{+title /}</title>
+        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/foundation.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="large-12 column">
+                <h1>Book Shelf</h1>
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class="large-12 column">
+                <nav class="top-bar" data-topbar role="navigation">
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li><a href="/manage">Dashboard</a></li>
+                            <li><a href="/manage/books">Books</a></li>
+                            <li><a href="/manage/categories">Categories</a></li>
+                            <li><a href="/" taget="_blank">View Website</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="large-12 column">
+                {messages|s}
+                {+body /}
+            </div> 
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="large-12 column">
+                <p>Read Wiser &copy; 2015 | <a href="/manage">Manage</a></p>
+                </div>
+            </div>
+        </footer>
+        
+        <script type="text/javascript" data-main="/js/app" src="/components/requirejs/require.js"></script>
+        <script type="text/javascript" src="/js/vendor/jquery.js"></script>
+        <script type="text/javascript" src="/js/foundation.min.js"></script>
+        <script type="text/javascript" src="js/foundation/foundation.js"></script>
+        <script type="text/javascript" src="js/foundation/foundation.equalizer.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        
+</html>

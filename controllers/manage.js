@@ -16,6 +16,7 @@ module.exports = function (router) {
     		var model = {
     			books:books
     		};
+
     		res.render('manage/books/index', model); 
     	})                        
     });
@@ -28,6 +29,7 @@ module.exports = function (router) {
     		var model = {
     			categories:categories
     		};
+
     		res.render('manage/categories/index', model); 
     	})                        
     });
@@ -39,7 +41,6 @@ module.exports = function (router) {
     		if(err) {
     			console.log(err);
     		}
-
     		var model = {
     			categories: categories
     		};
@@ -51,13 +52,13 @@ module.exports = function (router) {
     // Add a new book
 
     router.post('/books', function(req, res){
-    	var title = req.body.title.trim()
-    	,	category = req.body.category.trim()
-    	,	author = req.body.author.trim()
-    	,	publisher = req.body.publisher.trim()
-    	,	price = req.body.price.trim()
-    	,	description = req.body.description.trim()
-    	,	cover = req.body.cover;
+    	var title = req.body.title.trim();
+        var category = req.body.category.trim();
+        var author = req.body.author.trim();
+        var publisher = req.body.publisher.trim();
+        var price = req.body.price.trim();
+        var description = req.body.description.trim();
+        var cover = req.body.cover;
 
     
         // Decimal Limits
@@ -81,7 +82,6 @@ module.exports = function (router) {
     		}
 
     		req.flash('success', "Book Added");
-            res.location('/manage/books');
     		res.redirect('/manage/books');
     	})
     });
@@ -108,13 +108,13 @@ module.exports = function (router) {
     // Edit Book Info
 
     router.post('/books/edit/:id', function (req, res) {
-    	var title = req.body.title.trim()
-    	,	category = req.body.category.trim()
-    	,	author = req.body.author.trim()
-    	,	publisher = req.body.publisher.trim()
-    	,	price = req.body.price.trim()
-    	,	description = req.body.description.trim()
-    	,	cover = req.body.cover;
+    	var title = req.body.title.trim();
+        var category = req.body.category.trim();
+        var author = req.body.author.trim();
+        var publisher = req.body.publisher.trim();
+        var price = req.body.price.trim();
+        var description = req.body.description.trim();
+        var cover = req.body.cover;
 
         // Decimal Limits
         price = parseFloat(price).toFixed(2);
@@ -144,6 +144,7 @@ module.exports = function (router) {
             if (err) {
                 console.log(err);
             }
+
             req.flash('success', "Book Deleted");
             res.redirect('/manage/books');
         });
@@ -210,6 +211,7 @@ module.exports = function (router) {
             if (err) {
                 console.log(err);
             }
+
             req.flash('success', "Category Deleted");
             res.redirect('/manage/categories');
         });

@@ -1,19 +1,19 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/bin/npm', 'run', 'build' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/bin/npm', 'start' ]
 2 info using npm@3.3.4
 3 info using node@v4.0.0
-4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
-5 info lifecycle readWiser@0.1.0~prebuild: readWiser@0.1.0
-6 silly lifecycle readWiser@0.1.0~prebuild: no script for prebuild, continuing
-7 info lifecycle readWiser@0.1.0~build: readWiser@0.1.0
-8 verbose lifecycle readWiser@0.1.0~build: unsafe-perm in lifecycle true
-9 verbose lifecycle readWiser@0.1.0~build: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/shawn/Documents/nodejslearn/node10proj/ReadWiser/node_modules/.bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle readWiser@0.1.0~build: CWD: /home/shawn/Documents/nodejslearn/node10proj/ReadWiser
-11 silly lifecycle readWiser@0.1.0~build: Args: [ '-c', 'grunt build' ]
-12 silly lifecycle readWiser@0.1.0~build: Returned: code: 3  signal: null
-13 info lifecycle readWiser@0.1.0~build: Failed to exec build script
-14 verbose stack Error: readWiser@0.1.0 build: `grunt build`
-14 verbose stack Exit status 3
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle readWiser@0.1.0~prestart: readWiser@0.1.0
+6 silly lifecycle readWiser@0.1.0~prestart: no script for prestart, continuing
+7 info lifecycle readWiser@0.1.0~start: readWiser@0.1.0
+8 verbose lifecycle readWiser@0.1.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle readWiser@0.1.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/shawn/Documents/nodejslearn/node10proj/ReadWiser/node_modules/.bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle readWiser@0.1.0~start: CWD: /home/shawn/Documents/nodejslearn/node10proj/ReadWiser
+11 silly lifecycle readWiser@0.1.0~start: Args: [ '-c', 'node server.js' ]
+12 silly lifecycle readWiser@0.1.0~start: Returned: code: 1  signal: null
+13 info lifecycle readWiser@0.1.0~start: Failed to exec start script
+14 verbose stack Error: readWiser@0.1.0 start: `node server.js`
+14 verbose stack Exit status 1
 14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at EventEmitter.emit (events.js:172:7)
@@ -25,17 +25,17 @@
 15 verbose pkgid readWiser@0.1.0
 16 verbose cwd /home/shawn/Documents/nodejslearn/node10proj/ReadWiser
 17 error Linux 3.13.0-65-generic
-18 error argv "/usr/local/bin/node" "/usr/bin/npm" "run" "build"
+18 error argv "/usr/local/bin/node" "/usr/bin/npm" "start"
 19 error node v4.0.0
 20 error npm  v3.3.4
 21 error code ELIFECYCLE
-22 error readWiser@0.1.0 build: `grunt build`
-22 error Exit status 3
-23 error Failed at the readWiser@0.1.0 build script 'grunt build'.
+22 error readWiser@0.1.0 start: `node server.js`
+22 error Exit status 1
+23 error Failed at the readWiser@0.1.0 start script 'node server.js'.
 23 error This is most likely a problem with the readWiser package,
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
-23 error     grunt build
+23 error     node server.js
 23 error You can get their info via:
 23 error     npm owner ls readWiser
 23 error There is likely additional logging output above.

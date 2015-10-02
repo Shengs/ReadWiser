@@ -43,13 +43,15 @@ app.on('start', function () {
 
 // Setup Server
 var server;
-var port = process.env.port || 8000;
 /*
  * Create and start HTTP server.
  */
 
 server = http.createServer(app);
-server.listen(port);
-server.on('listening', function () {
-    console.log('Server listening on http://localhost:%d', this.address().port);
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+ 
+server.listen(server_port, server_ip_address, function () {
+  console.log( "Listening on " + server_ip_address + ", server_port " + port )
 });
+

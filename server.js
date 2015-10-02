@@ -43,13 +43,13 @@ app.on('start', function () {
 
 // Setup Server
 var server;
-
+var port = process.env.port || 8000;
 /*
  * Create and start HTTP server.
  */
 
 server = http.createServer(app);
-server.listen(process.env.PORT || 8000);
+server.listen(port);
 server.on('listening', function () {
     console.log('Server listening on http://localhost:%d', this.address().port);
 });

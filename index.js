@@ -5,9 +5,6 @@ var kraken = require('kraken-js');
 var db = require('./lib/db');
 var flash = require('connect-flash');
 
-var app = require('./index');
-var http = require('http');
-
 
 var options, app;
 
